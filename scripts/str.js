@@ -33,10 +33,31 @@ HTML이 웹 페이지의 기본 구조를 담당하고, CSS가 디자인을 담�
 JavaScript는 클라이언트 단에서 웹 페이지가 동작하는 것을 담당한다.
 웹 페이지를 자동차에 비유하자면, HTML은 자동차의 뼈대, CSS는 자동차의 외관, 
 JavaScript는 자동차의 동력이라고 볼 수 있다.`
-
+console.log(s);
+// 여러줄의 문자열은 '을 통해서 쓸수있다. 
  
 /*실습 : 위의 문자열에서 HTML은 몇번 사용되었는지 확인*/
+let pos = 0;
+let cnt = 0;
+while (true) {
+    pos = s.indexOf("외관",pos);
+    if (pos == -1) break;
+    cnt ++
+    pos = pos +1;
+
+}
+console.log(cnt);
+//while 은 True일 동안 계속 돌리는 거
+
+console.log(pos);
+//값으로 나오는 102가 HTML의 위치를 알려준다. 
  
 
 /* 문자열 슬라이싱*/
- 
+ let w = s.substr(0,4);
+ console.log(w)
+ w =s.substring(5,10)
+ console.log(w)
+/* slice => 뒤에서부터가능, 종료부분 생략가능*/
+w= s.slice(-4)
+console.log(w)
