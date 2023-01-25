@@ -47,6 +47,8 @@ const show = (n)=>{
         return;
     }
     console.log(n);
+// 같은곳을 여러번 눌렀을 때
+    if(selNum.indexOf(n)!= -1) return;
     cnt ++;//누른 횟수 세기
     selNum.push(n);
     console.log(selNum);
